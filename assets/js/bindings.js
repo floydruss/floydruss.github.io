@@ -1,47 +1,60 @@
 (function($) {
 
-  // $('#header').addClass('sticky-bar');
+  //////////////////////////////////////////////////////////////////////
 
-  var bindStickyNav =  function () {
-    $(window).bind('scroll', function() {
-      if ($(window).scrollTop() > 0) {
-        $('#header').addClass('sticky-bar');
-      }
-      else {
-        $('#header').removeClass('sticky-bar');
-      }
-    });
-  }();
+  			//Bind modal functionality.
+  			var $modal = $('#modal');
 
-  var bindDownloadNav =  function () {
-    $(".resume-overlay").hover(function() {
-      $("#download-nav").addClass("expanded");
-    }, function() {
-      $("#download-nav").removeClass("expanded");
-    });
-  }();
+  			//Brings up modal and loads video
+  			$('.video-thumbnail').on('click', function() {
+  				var videoUrl = $(event.currentTarget).data('url');
 
+  				$('#modal__video-container').append(
+  					'<iframe id="vimeo-iframe" src="' + videoUrl + '&autoplay=true" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  				)
 
+  				$modal.removeClass('hide');
+  				$modal.addClass('show');
+  			});
 
+  			//Removes video iframe and modal
+  			$('#modal__overlay').on('click', function() {
+  				$modal.removeClass('show');
+  				$modal.addClass('hide');
+  				// $vimeoIframe.attr('src', '');
+  				$('#vimeo-iframe').remove();
+  			});
 
+  //////////////////////////////////////////////////////////////////////
 
-  // #####SCROLL EASING######
+  			// Bind filters.
+  			$('.filter-button--commercials').on('click', '.filter-button__copy', function() {
+  				$('.videos').removeClass('music-videos')
+  				$('.videos').removeClass('narratives')
 
+  				$('.videos').hasClass('commercials')
+  					? $('.videos').removeClass('commercials')
+  					: $('.videos').addClass('commercials')
+  			});
 
-  $(function() {
-          $('a.ease').bind('click',function(event){
-              var $anchor = $(this);
+  			$('.filter-button--music-videos').on('click', '.filter-button__copy', function() {
+  				$('.videos').removeClass('commercials')
+  				$('.videos').removeClass('narratives')
 
-              $('html, body').stop().animate({
-                  scrollTop: $($anchor.attr('href')).offset().top
-              }, 1500,'easeInOutExpo');
+  				$('.videos').hasClass('music-videos')
+  					? $('.videos').removeClass('music-videos')
+  					: $('.videos').addClass('music-videos')
+  			});
 
-              event.preventDefault();
-          });
-      });
+  			$('.filter-button--narratives').on('click', '.filter-button__copy', function() {
+  				$('.videos').removeClass('music-videos')
+  				$('.videos').removeClass('commercials')
 
-   $(document).ready(function(){
-      $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false, deeplinking: false});
-    });
+  				$('.videos').hasClass('narratives')
+  					? $('.videos').removeClass('narratives')
+  					: $('.videos').addClass('narratives')
+  			});
+
+  //////////////////////////////////////////////////////////////////////
 
 })(jQuery);
