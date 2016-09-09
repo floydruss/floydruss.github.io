@@ -23,7 +23,28 @@
 				}, 0);
 			});
 
-			$('.filter-button--commercials').click(function() {
+//////////////////////////////////////////////////////////////////////
+
+			//Bind modal functionality.
+			var $vimeoIframe = $('#vimeo-iframe');
+
+			$('.video-thumbnail').on('click', function() {
+				var videoUrl = $(event.currentTarget).data('url');
+				$('#modal').removeClass('hide');
+				$('#modal').addClass('show');
+				$vimeoIframe.attr('src',videoUrl);
+			});
+
+			$('#modal__overlay').on('click', function() {
+				$('#modal').removeClass('show');
+				$('#modal').addClass('hide');
+				$vimeoIframe.attr('src', '');
+			});
+
+//////////////////////////////////////////////////////////////////////
+
+			// Bind filters.
+			$('.filter-button--commercials').on('click', '.filter-button__copy', function() {
 				$('.videos').removeClass('music-videos')
 				$('.videos').removeClass('narratives')
 
