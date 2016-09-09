@@ -47,16 +47,10 @@ video {
 
 /*MODAL*/
 
-body {
-  position: relative;
-}
-
 .modal {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 10;
-  top: 0;
-  left: 0;
   transition: opacity 0.8s, height 0s;
   overflow: hidden;
 }
@@ -82,7 +76,7 @@ body {
     width: 100%;
   }
 
-  .modal__window {
+  .modal__video-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -130,9 +124,10 @@ body {
   }
 
     .video-thumbnail {
-      width: 33.33%;
+      cursor: pointer;
       float: left;
       overflow: hidden;
+      width: 33.33%;
 
     }
     @media (max-width: 800px) {

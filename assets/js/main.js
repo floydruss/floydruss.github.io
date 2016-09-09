@@ -26,19 +26,26 @@
 //////////////////////////////////////////////////////////////////////
 
 			//Bind modal functionality.
-			var $vimeoIframe = $('#vimeo-iframe');
+			var $modal = $('#modal');
 
+			//Brings up modal and loads video
 			$('.video-thumbnail').on('click', function() {
 				var videoUrl = $(event.currentTarget).data('url');
-				$('#modal').removeClass('hide');
-				$('#modal').addClass('show');
-				$vimeoIframe.attr('src',videoUrl);
+
+				$('#modal__video-container').append(
+					'<iframe id="vimeo-iframe" src="' + videoUrl + '&autoplay=true" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+				)
+
+				$modal.removeClass('hide');
+				$modal.addClass('show');
 			});
 
+			//Removes video iframe and modal
 			$('#modal__overlay').on('click', function() {
-				$('#modal').removeClass('show');
-				$('#modal').addClass('hide');
-				$vimeoIframe.attr('src', '');
+				$modal.removeClass('show');
+				$modal.addClass('hide');
+				// $vimeoIframe.attr('src', '');
+				$('#vimeo-iframe').remove();
 			});
 
 //////////////////////////////////////////////////////////////////////
