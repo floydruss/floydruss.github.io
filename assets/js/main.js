@@ -43,29 +43,8 @@
 							$window.trigger('scroll');
 						});
 
-				// Scrolly.
-					$window.on('load.hl_scrolly', function() {
-
-						$('.scrolly').scrolly({
-							speed: 1500,
-							parent: $wrapper,
-							pollOnce: true
-						});
-
-						$window.off('load.hl_scrolly');
-
-					});
-
 				// Enable touch mode.
 					$html.addClass('is-touch');
-
-			}
-			else {
-
-				// Scrolly.
-					$('.scrolly').scrolly({
-						speed: 1500
-					});
 
 			}
 
@@ -119,34 +98,6 @@
 					});
 
 				}
-
-			// Scrollex.
-				skel.on('-small !small', function() {
-					$header.scrollex({
-						terminate: function() {
-
-							$headerTitle.css('opacity', '');
-
-						},
-						scroll: function(progress) {
-
-							// Fade out title as user scrolls down.
-								if (progress > 0.5)
-									x = 1 - progress;
-								else
-									x = progress;
-
-								$headerTitle.css('opacity', Math.max(0, Math.min(1, x * 2)));
-
-						}
-					});
-				});
-
-				skel.on('+small', function() {
-
-					$header.unscrollex();
-
-				});
 
 		// Main sections.
 			$('.main').each(function() {
