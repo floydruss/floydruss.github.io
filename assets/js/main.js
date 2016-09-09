@@ -32,7 +32,7 @@
 					: $('.videos').addClass('commercials')
 			});
 
-			$('.filter-button--music-videos').click(function() {
+			$('.filter-button--music-videos').on('click', '.filter-button__copy', function() {
 				$('.videos').removeClass('commercials')
 				$('.videos').removeClass('narratives')
 
@@ -41,7 +41,7 @@
 					: $('.videos').addClass('music-videos')
 			});
 
-			$('.filter-button--narratives').click(function() {
+			$('.filter-button--narratives').on('click', '.filter-button__copy', function() {
 				$('.videos').removeClass('music-videos')
 				$('.videos').removeClass('commercials')
 

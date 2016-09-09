@@ -80,47 +80,76 @@ video {
       }
 
   .videos {
-    /*background-color: red;*/
   }
 
-    .video-link {
+    .video-thumbnail {
       width: 33.33%;
       float: left;
       overflow: hidden;
 
     }
     @media (max-width: 800px) {
-      .video-link {
+      .video-thumbnail {
         width: 50%;
       }
     }
 
-      .video-link__link {
+      .video-thumbnail__inner {
         color: black;
         transition: all 0.5s;
         position: relative;
       }
 
-      .video-link__link:hover {
+      .video-thumbnail__inner:hover {
         transform: scale(1.1);
       }
 
-      .video-link__link:hover.video-link__link::before,
+      .video-thumbnail__inner::before {
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s;
+        width: 100%;
+        content: '';
+        display: block;
+      }
+
+      .video-thumbnail__inner::after {
+        position: absolute;
+        text-transform: uppercase;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s;
+        opacity: 0;
+      }
+
+      .commercials .video-thumbnail__inner:before,
+      .music-videos .video-thumbnail__inner:before,
+      .narratives .video-thumbnail__inner:before {
+        background-color: black;
+        opacity: 0.8;
+      }
+
+      .video-thumbnail__inner:hover.video-thumbnail__inner::before,
       .commercials .sk2-video::before,
       .commercials .npf-video::before,
       .commercials .syg-video::before,
       .commercials .gillette-video::before,
+      .commercials .unload-video::before,
       .music-videos .wdl-video::before,
       .music-videos .crazy-video::before,
       .music-videos .silva-video::before,
       .narratives .apotb-video::before {
+        background-color: white;
         opacity: 0.3;
       }
-      .video-link__link:hover.video-link__link::after,
+      .video-thumbnail__inner:hover.video-thumbnail__inner::after,
       .commercials .sk2-video::after,
       .commercials .npf-video::after,
       .commercials .syg-video::after,
       .commercials .gillette-video::after,
+      .commercials .unload-video::after,
       .music-videos .wdl-video::after,
       .music-videos .crazy-video::after,
       .music-videos .silva-video::after,
@@ -128,28 +157,9 @@ video {
         opacity: 1;
       }
 
-        .video-link__link::before {
-          background-color: white;
-          height: 100%;
-          opacity: 0;
-          position: absolute;
-          transition: all 0.5s;
-          width: 100%;
-          content: '';
-          display: block;
-        }
 
-        .video-link__link::after {
-          position: absolute;
-          text-transform: uppercase;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          transition: all 0.5s;
-          opacity: 0;
-        }
 
-        .video-link__image {
+        .video-thumbnail__image {
           width: 100%;
         }
 
@@ -176,6 +186,9 @@ video {
       }
       .apotb-video::after {
         content: 'A PIECE OF THE BOTTOM';
+      }
+      .unload-video::after {
+        content: 'UNLOAD YOUR 401K';
       }
 
 
