@@ -9,8 +9,8 @@
   			$('.video-thumbnail').on('click', function() {
   				var videoUrl = $(event.currentTarget).data('url');
 
-  				$('#modal__video-container').append(
-  					'<iframe id="vimeo-iframe" src="' + videoUrl + '&autoplay=true" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
+  				$('#modal__video-container-inner').append(
+  					'<iframe id="vimeo-iframe" class="vimeo-iframe" src="' + videoUrl + '&autoplay=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'
   				)
 
   				$modal.removeClass('hide');

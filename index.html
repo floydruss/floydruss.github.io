@@ -4,11 +4,7 @@
 		<title>Floyd Russ</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><script src="assets/css/ie/respond.min.js"></script><![endif]-->
 
 		<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
@@ -22,7 +18,9 @@
 	<body>
 		<aside id='modal' class="modal hide">
 			<div id='modal__overlay' class="modal__overlay"></div>
-			<div id='modal__video-container' class="modal__video-container"></div>
+			<div id='modal__video-container-outer' class="modal__video-container-outer">
+				<div id='modal__video-container-inner' class="modal__video-container-inner"></div>
+			</div>
 		</aside>
 		<div class="content">
 			<nav class="top-nav clearfix">
