@@ -6,7 +6,7 @@
   			var $modal = $('#modal');
 
   			//Brings up modal and loads video
-  			$('.video-thumbnail').on('click', function() {
+  			$('.video-thumbnail').on('click', function(event) {
   				var videoUrl = $(event.currentTarget).data('url');
 
   				$('#modal__video-container-inner').append(
