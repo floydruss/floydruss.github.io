@@ -28,7 +28,7 @@
   //////////////////////////////////////////////////////////////////////
 
   			// Bind filters.
-  			$('.filter-button--commercials').on('click', '.filter-button__copy', function() {
+  			$('.filter-button--commercials').on('click', function() {
   				$('.videos').removeClass('music-videos')
   				$('.videos').removeClass('narratives')
 
@@ -37,7 +37,7 @@
   					: $('.videos').addClass('commercials')
   			});
 
-  			$('.filter-button--music-videos').on('click', '.filter-button__copy', function() {
+  			$('.filter-button--music-videos').on('click', function() {
   				$('.videos').removeClass('commercials')
   				$('.videos').removeClass('narratives')
 
@@ -46,7 +46,7 @@
   					: $('.videos').addClass('music-videos')
   			});
 
-  			$('.filter-button--narratives').on('click', '.filter-button__copy', function() {
+  			$('.filter-button--narratives').on('click', function() {
   				$('.videos').removeClass('music-videos')
   				$('.videos').removeClass('commercials')
 
