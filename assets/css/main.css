@@ -113,7 +113,8 @@ button {
   padding-left: 60px;
   padding-right: 60px;
   max-width: 1400px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 1000px) {
   .content {
@@ -153,7 +154,8 @@ button {
         display: block;
         height: auto;
         left: 0;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         max-width: 400px;
         position: relative;
         top: 0;
@@ -326,16 +328,20 @@ button {
 .bio {
   margin-top: 50px;
   margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
   .bio__image {
     float: left;
-    width: 50%;
+    width: 30%;
+    padding-right: 50px;
   }
 
   .bio__copy {
     float: left;
-    width: 50%;
+    width: 70%;
   }
 
     .bio__copy__paragraph {
