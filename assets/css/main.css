@@ -85,10 +85,14 @@ button {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     max-width: 640px;
     z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform:    translate(-50%, -50%);
+    -ms-transform:     translate(-50%, -50%);
+    -o-transform:      translate(-50%, -50%);
+    transform:         translate(-50%, -50%);
   }
 
     .modal__video-container-inner {
@@ -147,7 +151,11 @@ button {
       position: absolute;
       left: 0;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform:    translateY(-50%);
+      -ms-transform:     translateY(-50%);
+      -o-transform:      translateY(-50%);
+      transform:         translateY(-50%);
     }
     @media (max-width: 700px) {
       .site-logo {
@@ -159,8 +167,12 @@ button {
         max-width: 400px;
         position: relative;
         top: 0;
-        transform: none;
         width: 100%;
+        -webkit-transform: none;
+        -moz-transform:    none;
+        -ms-transform:     none;
+        -o-transform:      none;
+        transform:         none;
       }
     }
 
@@ -173,8 +185,12 @@ button {
       text-align: center;
       text-transform: uppercase;
       top: 50%;
-      transform: translateY(-50%);
       transition: all 0.5s;
+      -webkit-transform: translateY(-50%);
+      -moz-transform:    translateY(-50%);
+      -ms-transform:     translateY(-50%);
+      -o-transform:      translateY(-50%);
+      transform:         translateY(-50%);
     }
     @media (max-width: 1000px) {
       .nav-button {
@@ -195,7 +211,11 @@ button {
         padding-right: 0;
         padding-left: 0;
         padding-bottom: 20px;
-        transform: none;
+        -webkit-transform: none;
+        -moz-transform:    none;
+        -ms-transform:     none;
+        -o-transform:      none;
+        transform:         none;
       }
     }
 
@@ -231,7 +251,11 @@ button {
       }
 
       .video-thumbnail__inner:hover {
-        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform:    scale(1.1);
+        -ms-transform:     scale(1.1);
+        -o-transform:      scale(1.1);
+        transform:         scale(1.1);
       }
 
       .video-thumbnail__inner::before {
@@ -249,9 +273,13 @@ button {
         text-transform: uppercase;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
         transition: all 0.5s;
         opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform:    translate(-50%, -50%);
+        -ms-transform:     translate(-50%, -50%);
+        -o-transform:      translate(-50%, -50%);
+        transform:         translate(-50%, -50%);
       }
 
       .commercials .video-thumbnail__inner:before,
