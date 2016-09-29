@@ -112,6 +112,8 @@ button {
 .content {
   padding-left: 60px;
   padding-right: 60px;
+  max-width: 1400px;
+  margin: auto;
 }
 @media (max-width: 1000px) {
   .content {
@@ -184,7 +186,7 @@ button {
         display: none;
       }
 
-      .about-link{
+      .nav-link{
         display: block;
         float: none;
         font-size: 18px;
@@ -316,3 +318,41 @@ button {
       .unload-video::after {
         content: 'UNLOAD YOUR 401K';
       }
+
+
+
+/*ABOUT*/
+
+.bio {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+  .bio__image {
+    float: left;
+    width: 50%;
+  }
+
+  .bio__copy {
+    float: left;
+    width: 50%;
+  }
+
+    .bio__copy__paragraph {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+.awards {
+  text-align: center;
+}
+
+  .awards__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .award {
+    margin-bottom: 10px;
+  }
