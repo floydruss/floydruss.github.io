@@ -143,12 +143,12 @@ button {
     border-bottom: 1px solid #ccc;
     margin-bottom: 25px;
   }
-  /*@media (max-width: 700px) {
+  @media (max-width: 700px) {
     .top-nav {
       padding: 0;
       height: auto;
     }
-  }*/
+  }
 
     .site-logo {
       height: 50px;
@@ -161,24 +161,25 @@ button {
       -o-transform:      translateY(-50%);
       transform:         translateY(-50%);
     }
-    /*@media (max-width: 700px) {
+    @media (max-width: 700px) {
       .site-logo {
         display: block;
-        height: auto;
+        /*height: auto;
         left: 0;
         margin-left: auto;
         margin-right: auto;
-        max-width: 400px;
+        max-width: 400px;*/
         position: relative;
-        top: 0;
-        width: 100%;
+        /*top: 0;*/
+        margin-bottom: 15px;
+        margin-top: 10px;
         -webkit-transform: none;
         -moz-transform:    none;
         -ms-transform:     none;
         -o-transform:      none;
         transform:         none;
       }
-    }*/
+    }
 
     .nav-buttons {
       position: relative;
@@ -212,16 +213,18 @@ button {
         font-size: 14px;
       }
     }*/
-    /*@media (max-width: 700px) {
+    @media (max-width: 700px) {
       .nav-button{
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 15px;
         -webkit-transform: none;
         -moz-transform:    none;
         -ms-transform:     none;
         -o-transform:      none;
         transform:         none;
       }
-    }*/
+    }
 
     .nav-button:hover {
       color: #7d7d7d;
@@ -244,11 +247,6 @@ button {
     @media (max-width: 1000px) {
       .video-thumbnail {
         width: 50%;
-      }
-    }
-    @media (max-width: 700px) {
-      .video-thumbnail {
-        width: 100%;
       }
     }
 
