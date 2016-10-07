@@ -258,6 +258,7 @@ button {
         color: black;
         transition: all 0.5s;
         position: relative;
+        font-size: 12px;
       }
 
       .video-thumbnail__inner:hover {
@@ -364,6 +365,13 @@ button {
         content: 'UNLOAD YOUR 401K';
       }
 
+  .footer {
+    font-size: 12px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
 
 
 /*ABOUT*/
@@ -378,13 +386,13 @@ button {
 
   .bio__image {
     float: left;
-    width: 30%;
+    width: 50%;
     padding-right: 50px;
   }
 
   .bio__copy {
     float: left;
-    width: 70%;
+    width: 50%;
   }
 
     .bio__copy__paragraph {
