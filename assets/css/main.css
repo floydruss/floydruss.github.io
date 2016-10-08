@@ -366,8 +366,9 @@ button {
       }
 
   .footer {
+    color: #666;
     font-size: 12px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
   }
@@ -397,7 +398,7 @@ button {
 
     .bio__copy__paragraph {
       margin-bottom: 20px;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 20px;
     }
 
@@ -412,4 +413,64 @@ button {
 
   .award {
     margin-bottom: 10px;
+    font-size: 14px;
   }
+
+
+
+  /*CONTACT*/
+
+  .contact {
+    position: relative;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    .contact__image {
+      float: left;
+      width: 50%;
+      padding-right: 50px;
+    }
+
+    .contact__info {
+      float: left;
+      text-align: center;
+      position: relative;
+      top: 40px;
+    }
+
+      .contact__info__tool-of-na {
+      }
+
+        .contact__info__tool-of-na__title,
+        .contact__info__direct__title {
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+        }
+
+        .contact__info__tool-of-na__logo {
+          margin-bottom: 10px;
+          width: 140px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .contact__info__tool-of-na__email,
+        .contact__info__direct__email {
+          font-size: 13px;
+          line-height: 16px;
+          color: #666;
+        }
+
+        .contact__info__tool-of-na__phone {
+          font-size: 13px;
+          line-height: 16px;
+        }
+
+      .contact__info__divider {
+        margin-top: 60px;
+        margin-bottom: 60px;
+      }
