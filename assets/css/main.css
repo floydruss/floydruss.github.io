@@ -299,6 +299,12 @@ button {
           display: block;
         }
 
+        .video-thumbnail__title__line {
+          border-color: black;
+          border-bottom: none;
+          width: 40px;
+        }
+
       /*Darkens other video thumbnails*/
       /*.commercials .video-thumbnail__inner:before,
       .music-videos .video-thumbnail__inner:before,
