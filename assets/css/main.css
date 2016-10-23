@@ -361,27 +361,46 @@ button {
 
 .bio {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 5px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 700px) {
+  .bio {
+    margin-top: 10px;
+  }
+}
 
   .bio__image {
     float: left;
-    width: 50%;
-    padding-right: 50px;
+    width: 43%;
+    padding-right: 30px;
   }
 
   .bio__copy {
     float: left;
     width: 50%;
   }
+  @media (max-width: 700px) {
+    .bio__image {
+      float: none;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 0;
+      width: 80%;
+    }
+    .bio__copy {
+      float: none;
+      width: 100%;
+    }
+  }
 
     .bio__copy__paragraph {
       margin-bottom: 20px;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 12px;
+      line-height: 17px;
     }
 
 .awards {
@@ -389,13 +408,14 @@ button {
 }
 
   .awards__title {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: underline;
   }
 
   .award {
-    margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 17px;
   }
 
 
@@ -404,7 +424,6 @@ button {
 
   .contact {
     position: relative;
-    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -416,10 +435,18 @@ button {
     }
 
     .contact__info {
-      float: left;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
       text-align: center;
       position: relative;
-      top: 40px;
+      min-height: 600px;
+    }
+    @media (max-width: 700px) {
+      .contact__info {
+        min-height: 400px;
+      }
     }
 
       .contact__info__tool-of-na {
@@ -427,15 +454,14 @@ button {
 
         .contact__info__tool-of-na__title,
         .contact__info__direct__title {
-          font-size: 15px;
-          font-weight: bold;
+          font-size: 14px;
           margin-bottom: 5px;
           text-transform: uppercase;
         }
 
         .contact__info__tool-of-na__logo {
           margin-bottom: 10px;
-          width: 140px;
+          width: 100px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -453,6 +479,6 @@ button {
         }
 
       .contact__info__divider {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
