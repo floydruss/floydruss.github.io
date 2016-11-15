@@ -1,6 +1,11 @@
 @import url("font-awesome.min.css");
 @import url("animations.css");
 
+@font-face {
+  font-family: 'Vonique';
+  src: url('../fonts/vonique-64.ttf') format('truetype');
+}
+
 html,
 body,
 div,
@@ -35,7 +40,7 @@ button {
   color: black;
   display: block;
   font-size: 100%;
-  font-family: inherit;
+  font-family: sans-serif;
   font: inherit;
   list-style: none;
   margin: 0;
@@ -164,13 +169,11 @@ button {
     @media (max-width: 700px) {
       .site-logo {
         display: block;
-        /*height: auto;
+        width: 145px;
         left: 0;
         margin-left: auto;
         margin-right: auto;
-        max-width: 400px;*/
-        position: relative;
-        /*top: 0;*/
+        position: static;
         margin-bottom: 15px;
         margin-top: 10px;
         -webkit-transform: none;
@@ -185,16 +188,20 @@ button {
       position: relative;
       height: 100%;
     }
-    /*@media (max-width: 700px) {
+    @media (max-width: 700px) {
       .nav-buttons{
-        padding-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 140px;
       }
-    }*/
+    }
 
     .nav-button {
       cursor: pointer;
       float: left;
+      font-family: Vonique;
       font-size: 12px;
+      letter-spacing: 1px;
       padding-left: 15px;
       padding-right: 15px;
       position: relative;
@@ -208,16 +215,11 @@ button {
       -o-transform:      translateY(-50%);
       transform:         translateY(-50%);
     }
-    /*@media (max-width: 1000px) {
-      .nav-button {
-        font-size: 14px;
-      }
-    }*/
     @media (max-width: 700px) {
       .nav-button{
         padding-bottom: 10px;
-        padding-left: 5px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
         -webkit-transform: none;
         -moz-transform:    none;
         -ms-transform:     none;
@@ -400,6 +402,7 @@ button {
     .bio__copy {
       float: none;
       width: 100%;
+      text-align: justify;
     }
   }
 
