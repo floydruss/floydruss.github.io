@@ -68,6 +68,7 @@ button {
   font-family: EuropeUndergroundLight, sans-serif;
   letter-spacing: 1.7px;
   line-height: 16px;
+  font-weight: 600;
 }
 
 /*MODAL*/
@@ -466,7 +467,9 @@ button {
     }
     .bio__copy {
       float: none;
-      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
       text-align: justify;
     }
   }
@@ -479,6 +482,13 @@ button {
 
 .awards {
   text-align: center;
+}
+@media (max-width: 700px) {
+  .awards {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
 
   .awards__title {
