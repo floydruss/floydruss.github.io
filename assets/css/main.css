@@ -370,13 +370,14 @@ button {
         .video-thumbnail__title__copy {
           display: block;
           font-family: Monterey, sans-serif;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.7px;
+          font-size: 13px;
         }
-        @media (max-width: 700px) {
-          .video-thumbnail__title__copy {
-            letter-spacing: 0.7px;
+          @media (max-width: 700px) {
+            .video-thumbnail__title__copy {
+              font-size: 12px;
+            }
           }
-        }
 
         .video-thumbnail__title__line {
           border-color: black;
@@ -385,16 +386,16 @@ button {
         }
 
       /*Darkens other video thumbnails*/
-      /*.commercials .video-thumbnail__inner:before,
+      .commercials .video-thumbnail__inner:before,
       .music-videos .video-thumbnail__inner:before,
       .narratives .video-thumbnail__inner:before {
         background-color: black;
         opacity: 0.8;
-      }*/
+      }
 
       .video-thumbnail__inner:hover.video-thumbnail__inner::before {
         background-color: white;
-        opacity: 0.6;
+        opacity: 0.5;
       }
       @media (max-width: 700px) {
         .video-thumbnail__inner:hover.video-thumbnail__inner::before {
@@ -412,7 +413,7 @@ button {
       .music-videos .silva-video::before,
       .narratives .apotb-video::before {
         background-color: white;
-        opacity: 0.4;
+        opacity: 0.3;
       }
       .video-thumbnail__inner:hover .video-thumbnail__title,
       .commercials .sk2-video .video-thumbnail__title,
