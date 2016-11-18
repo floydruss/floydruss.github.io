@@ -9,6 +9,10 @@
   font-family: 'EuropeUndergroundLight';
   src: url('../fonts/EuropeUndergroundLight.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Monterey';
+  src: url('../fonts/Monterey.ttf') format('truetype');
+}
 
 html,
 body,
@@ -341,6 +345,7 @@ button {
         text-transform: uppercase;
         top: 50%;
         transition: all 0.5s;
+        width: 80%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform:    translate(-50%, -50%);
         -ms-transform:     translate(-50%, -50%);
@@ -364,6 +369,13 @@ button {
 
         .video-thumbnail__title__copy {
           display: block;
+          font-family: Monterey, sans-serif;
+          letter-spacing: 0.5px;
+        }
+        @media (max-width: 700px) {
+          .video-thumbnail__title__copy {
+            letter-spacing: 0.7px;
+          }
         }
 
         .video-thumbnail__title__line {
