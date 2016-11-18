@@ -403,28 +403,16 @@ button {
         }
       }
 
-      .commercials .sk2-video::before,
-      .commercials .npf-video::before,
-      .commercials .syg-video::before,
-      .commercials .gillette-video::before,
-      .commercials .unload-video::before,
-      .music-videos .wdl-video::before,
-      .music-videos .crazy-video::before,
-      .music-videos .silva-video::before,
-      .narratives .apotb-video::before {
+      .commercials .commercial::before,
+      .music-videos .music-video::before,
+      .narratives .narrative::before {
         background-color: white;
         opacity: 0.3;
       }
       .video-thumbnail__inner:hover .video-thumbnail__title,
-      .commercials .sk2-video .video-thumbnail__title,
-      .commercials .npf-video .video-thumbnail__title,
-      .commercials .syg-video .video-thumbnail__title,
-      .commercials .gillette-video .video-thumbnail__title,
-      .commercials .unload-video .video-thumbnail__title,
-      .music-videos .wdl-video .video-thumbnail__title,
-      .music-videos .crazy-video .video-thumbnail__title,
-      .music-videos .silva-video .video-thumbnail__title,
-      .narratives .apotb-video .video-thumbnail__title {
+      .commercials .commercial .video-thumbnail__title,
+      .music-videos .music-video .video-thumbnail__title,
+      .narratives .narrative .video-thumbnail__title {
         opacity: 1;
       }
 
