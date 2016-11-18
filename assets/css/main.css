@@ -502,6 +502,12 @@ button {
   .award {
     font-size: 12px;
     line-height: 16px;
+    margin-bottom: 5px;
+  }
+  @media (max-width: 700px) {
+    .award {
+      margin-bottom: 10px;
+    }
   }
 
 
