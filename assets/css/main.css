@@ -6,10 +6,6 @@
   src: url('../fonts/vonique-64.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'EuropeUndergroundLight';
-  src: url('../fonts/EuropeUndergroundLight.ttf') format('truetype');
-}
-@font-face {
   font-family: 'Monterey';
   src: url('../fonts/Monterey.ttf') format('truetype');
 }
@@ -62,13 +58,6 @@ button {
   content: '';
   clear: both;
   display: block;
-}
-
-.body-copy {
-  font-family: EuropeUndergroundLight, sans-serif;
-  letter-spacing: 1.7px;
-  line-height: 16px;
-  font-weight: 600;
 }
 
 /*MODAL*/
