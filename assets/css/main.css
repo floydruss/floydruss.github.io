@@ -358,19 +358,21 @@ button {
       }
 
         .video-thumbnail__title__copy {
+          color: white;
           display: block;
           font-family: Monterey, sans-serif;
+          font-size: 14px;
           letter-spacing: 0.7px;
-          font-size: 13px;
         }
           @media (max-width: 700px) {
             .video-thumbnail__title__copy {
+              color: black;
               font-size: 12px;
             }
           }
 
         .video-thumbnail__title__line {
-          border-color: black;
+          border-color: white;
           border-bottom: none;
           width: 40px;
         }
@@ -380,12 +382,12 @@ button {
       .music-videos .video-thumbnail__inner:before,
       .narratives .video-thumbnail__inner:before {
         background-color: black;
-        opacity: 0.8;
+        opacity: 0.4;
       }
 
       .video-thumbnail__inner:hover.video-thumbnail__inner::before {
         background-color: white;
-        opacity: 0.5;
+        opacity: 0.2;
       }
       @media (max-width: 700px) {
         .video-thumbnail__inner:hover.video-thumbnail__inner::before {
@@ -397,7 +399,7 @@ button {
       .music-videos .music-video::before,
       .narratives .narrative::before {
         background-color: white;
-        opacity: 0.3;
+        opacity: 0.1;
       }
       .video-thumbnail__inner:hover .video-thumbnail__title,
       .commercials .commercial .video-thumbnail__title,
