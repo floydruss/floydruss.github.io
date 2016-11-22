@@ -23,42 +23,6 @@
 				}, 0);
 			});
 
-		// Touch mode.
-			if (skel.vars.mobile) {
-
-				var $wrapper;
-
-				// Create wrapper.
-					$body.wrapInner('<div id="wrapper" />');
-					$wrapper = $('#wrapper');
-
-					// Hack: iOS vh bug.
-						if (skel.vars.os == 'ios')
-							$wrapper
-								.css('margin-top', -25)
-								.css('padding-bottom', 25);
-
-					// Pass scroll event to window.
-						$wrapper.on('scroll', function() {
-							$window.trigger('scroll');
-						});
-
-				// Enable touch mode.
-					$html.addClass('is-touch');
-
-			}
-
-		// Fix: Placeholder polyfill.
-			// $('form').placeholder();
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
-
 		// Header.
 			var $header = $('#title'),
 				$headerTitle = $header.find('header'),
