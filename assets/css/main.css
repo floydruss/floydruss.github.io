@@ -358,7 +358,7 @@ button {
       }
 
         .video-thumbnail__title__copy {
-          color: white;
+          color: black;
           display: block;
           font-family: Monterey, sans-serif;
           font-size: 14px;
@@ -372,7 +372,7 @@ button {
           }
 
         .video-thumbnail__title__line {
-          border-color: white;
+          border-color: black;
           border-bottom: none;
           width: 40px;
         }
@@ -387,7 +387,7 @@ button {
 
       .video-thumbnail__inner:hover.video-thumbnail__inner::before {
         background-color: white;
-        opacity: 0.2;
+        opacity: 0.4;
       }
       @media (max-width: 700px) {
         .video-thumbnail__inner:hover.video-thumbnail__inner::before {
@@ -399,7 +399,7 @@ button {
       .music-videos .music-video::before,
       .narratives .narrative::before {
         background-color: white;
-        opacity: 0.1;
+        opacity: 0.3;
       }
       .video-thumbnail__inner:hover .video-thumbnail__title,
       .commercials .commercial .video-thumbnail__title,
